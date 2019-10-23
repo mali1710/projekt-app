@@ -54,9 +54,8 @@ class Courses {
 
     function deleteCourse($id){
         $sql = "DELETE FROM kurser WHERE id = $id";
-        $result = $this->db->query($sql);
-        
-        return $result;
+        return $this->db->query($sql);
+               
 
     }
 

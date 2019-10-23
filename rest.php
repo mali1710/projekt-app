@@ -47,6 +47,8 @@ switch ($method){
         //Kod för delete
         $response = $course->deleteCourse($input['id']);
         break;
+    default:
+        break;
 }
 echo json_encode($response);
 
