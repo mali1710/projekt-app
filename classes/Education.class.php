@@ -16,7 +16,7 @@ class Education {
   
     //Read/show/view education
    function viewEducation(){
-        $sql = "SELECT * FROM education ORDER BY created ASC";  
+        $sql = "SELECT * FROM education ORDER BY created DESC";  
 
         $result = $this->db->query($sql);
 
@@ -55,8 +55,8 @@ class Education {
 
     //Delete education
 
-    function deleteCourse($id){
-        $sql = "DELETE FROM kurser WHERE id = $id";
+    function deleteEducation($id){
+        $sql = "DELETE FROM education WHERE id = $id";
         return $this->db->query($sql);
                
 

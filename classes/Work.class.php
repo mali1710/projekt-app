@@ -16,7 +16,7 @@ class Work {
   
     //Read/show/view work
    function viewWork(){
-        $sql = "SELECT * FROM work ORDER BY created ASC";  
+        $sql = "SELECT * FROM work ORDER BY created DESC";  
 
         $result = $this->db->query($sql);
 

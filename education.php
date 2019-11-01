@@ -6,7 +6,7 @@ include("classes/Education.class.php");
 header("Content-Type: application/json; charset=UTF-8");
 
 //Allow access 
-header("Access-Control-Allow-Origin: mallind.se");
+header("Access-Control-Allow-Origin: https://mallind.se");
 
 //Allow methods
 header("Access-Control-Allow-Methods: POST, GET, DELETE, PUT");

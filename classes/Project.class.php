@@ -16,7 +16,7 @@ class Project {
   
     //Read/show/view project
    function viewProjects(){
-        $sql = "SELECT * FROM projects ORDER BY created ASC";  
+        $sql = "SELECT * FROM projects ORDER BY created DESC";  
 
         $result = $this->db->query($sql);
 
