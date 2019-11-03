@@ -33,15 +33,6 @@ class Work {
 
     }
 
-    function viewEducation(){
-        $sql = "SELECT * FROM education ORDER BY created ASC";  
-
-        $result = $this->db->query($sql);
-
-        return mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-    }
-
     //Create work
     function createWork($dates, $company, $title){
         $sql = "INSERT INTO work (dates, company, title) 
